@@ -3,7 +3,7 @@
      text-align: center;
      overflow: hidden;
      /* Ensures the content is not revealed until the animation */
-     border-right: .15em solid orange;
+     /* border-right: .15em solid orange; */
      /* The typwriter cursor */
      white-space: nowrap;
      /* Keeps the content on a single line */
@@ -16,7 +16,12 @@
          blink-caret .75s step-end infinite;
 
      margin-top: 5rem;
+     margin-bottom: 4rem;
      font-size: 16px;
+ }
+
+ h3 {
+     text-align: center;
  }
 
  /* The typing effect */
@@ -30,8 +35,10 @@
      }
  }
 
+ */
+
  /* The typewriter cursor effect */
- @keyframes blink-caret {
+ * @keyframes blink-caret {
 
      from,
      to {
@@ -45,8 +52,8 @@
 
  audio {
      /* margin: auto; */
-     width: 50%;
-     margin-top: 5rem;
+     width: 100%;
+     margin-top: 1rem;
      text-align: center;
      vertical-align: center;
      justify-content: center;

@@ -1,8 +1,10 @@
 let sounds = [
     {
+        title: "Day 1",
+        // link: "https://blah.net",
+        // linktext: "hello",
         audioclip: "audio/01.mp3",
-        link: "https://blah.net",
-        linktext: ""
+
     },
 
     {
@@ -60,6 +62,15 @@ let counter = 0;
 function addAudio() {
 
 
+    let audiotitle = document.createElement('h3');
+    audiotitle.innerHTML = sounds[counter].title;
+
+
+    // let audiolink = document.createElement('a');
+
+    // audiolink.href = sounds[diffDays].link;
+    // audiolink.className = '';
+    // audiolink.innerHTML = sounds[counter].linktext;
 
     let audioclip = document.createElement('audio');
     audioclip.src = sounds[counter].audioclip;
@@ -67,17 +78,15 @@ function addAudio() {
     //audioclip.src = sounds[diffDays];
     audioclip.controls = true;
 
-    let audiolink = document.createElement('a');
-    audiolink.href = sounds[diffDays].link;
-    audiolink.className = '';
-    audiolink.innerHTML = sounds[counter].linktext;
+
+
     console.log(sounds[counter].link);
 
 
-
-
+    document.body.appendChild(audiotitle);
+    // document.body.appendChild(audiolink);
     document.body.appendChild(audioclip);
-    document.body.appendChild(audiolink);
+
 
     counter++;
     console.log(diffDays)
