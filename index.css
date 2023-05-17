@@ -16,6 +16,7 @@
          blink-caret .75s step-end infinite;
 
      margin-top: 5rem;
+     font-size: 16px;
  }
 
  /* The typing effect */
