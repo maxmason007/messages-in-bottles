@@ -41,7 +41,7 @@ h2 {
     font-size: 14px;
     border-style: solid;
     font-weight: lighter;
-    padding: 5px;
+
 }
 
 h3 {
@@ -50,6 +50,14 @@ h3 {
     font-size: 14px;
     margin-bottom: 25px;
     font-family: Open Sans;
+}
+
+.click {
+    padding: 10px;
+    text-align: center;
+    width: 78%;
+    margin: auto;
+
 }
 
 
