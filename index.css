@@ -27,7 +27,7 @@ h1 {
          typing 3.5s steps(40, end),
          blink-caret .75s step-end infinite; */
 
-    margin-top: 5rem;
+    margin-top: 2rem;
     margin-bottom: 4rem;
     font-size: 24px;
     color: white;
@@ -38,15 +38,16 @@ h2 {
     text-align: center;
     overflow: hidden;
     color: white;
-    font-size: 16px;
-    border-style: double;
+    font-size: 14px;
+    border-style: solid;
     font-weight: lighter;
+    padding: 5px;
 }
 
 h3 {
     text-align: center;
     color: yellow;
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 25px;
     font-family: Open Sans;
 }
