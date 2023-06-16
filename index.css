@@ -1,9 +1,17 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+
 body {
     background: black;
 }
 
 h1 {
     font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-weight: lighter;
     text-align: center;
     overflow: hidden;
     /* Ensures the content is not revealed until the animation */
@@ -32,6 +40,7 @@ h2 {
     color: white;
     font-size: 16px;
     border-style: double;
+    font-weight: lighter;
 }
 
 h3 {
@@ -39,6 +48,7 @@ h3 {
     color: yellow;
     font-size: 16px;
     margin-bottom: 25px;
+    font-family: Open Sans;
 }
 
 
@@ -83,6 +93,10 @@ h3 {
     height: 40px;
     text-align: center;
     font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+}
+
+.audiotitle {
+    margin-left: 15px;
 }
 
 
