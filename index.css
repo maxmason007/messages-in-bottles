@@ -2,62 +2,6 @@ body {
     background: black;
 }
 
-h3 {
-    text-align: center;
-    color: white;
-}
-
-
-
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    color: white;
-}
-
-.photorow {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    /* border-style: dotted; */
-    border-color: yellow;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-}
-
-.photocolumn {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-    text-align: center;
-    border-style: dashed;
-    border-color: yellow;
-
-}
-
-.blue-column {
-    background-color: blue;
-    height: 100px;
-    text-align: center;
-}
-
-.green-column {
-    height: 50px;
-    text-align: center;
-    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
-    border-style: double;
-}
-
-
 h1 {
     font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
     text-align: center;
@@ -81,38 +25,70 @@ h1 {
     color: white;
 }
 
-/* h2 {
-     text-align: center;
-     letter-spacing: 5px;
- } */
+h2 {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    font-size: 16px;
+    border-style: double;
+}
+
+h3 {
+    text-align: center;
+    color: yellow;
+    font-size: 16px;
+    margin-bottom: 25px;
+}
+
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+}
+
+.photorow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border-style: dotted; */
+    /* border-color: yellow; */
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin-bottom: 10%;
+}
+
+.photocolumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    text-align: center;
+    /* border-style: dashed; */
+    /* border-color: yellow; */
+
+}
+
+.green-column {
+    height: 40px;
+    text-align: center;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+}
 
 
 
 
-/* The typing effect
- @keyframes typing {
-     from {
-         width: 0
-     }
 
-     to {
-         width: 100%
-     }
- } */
-
-
-/* The typewriter cursor effect */
-/* * @keyframes blink-caret {
-
-     from,
-     to {
-         border-color: transparent
-     }
-
-     50% {
-         border-color: orange;
-     } */
-/* } */
 
 audio {
     /* margin: auto; */
