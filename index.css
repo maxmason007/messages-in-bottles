@@ -75,6 +75,7 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: 20%;
     /* border-style: dotted; */
     /* border-color: yellow; */
 }
