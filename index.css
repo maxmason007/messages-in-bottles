@@ -1,30 +1,95 @@
- h1 {
-     font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
-     text-align: center;
-     overflow: hidden;
-     /* Ensures the content is not revealed until the animation */
-     /* border-right: .15em solid orange; */
-     /* The typwriter cursor */
-     white-space: nowrap;
-     /* Keeps the content on a single line */
-     margin: 0 auto;
-     /* Gives that scrolling effect as the typing happens */
-     letter-spacing: .15em;
-     /* Adjust as needed */
-     animation:
+body {
+    background: black;
+}
+
+h3 {
+    text-align: center;
+    color: white;
+}
+
+
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+}
+
+.photorow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    /* border-style: dotted; */
+    border-color: yellow;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.photocolumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    text-align: center;
+    border-style: dashed;
+    border-color: yellow;
+
+}
+
+.blue-column {
+    background-color: blue;
+    height: 100px;
+    text-align: center;
+}
+
+.green-column {
+    height: 50px;
+    text-align: center;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    border-style: double;
+}
+
+
+h1 {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    text-align: center;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    /* border-right: .15em solid orange; */
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    /* animation:
          typing 3.5s steps(40, end),
-         blink-caret .75s step-end infinite;
+         blink-caret .75s step-end infinite; */
 
-     margin-top: 5rem;
-     margin-bottom: 4rem;
-     font-size: 16px;
- }
+    margin-top: 5rem;
+    margin-bottom: 4rem;
+    font-size: 24px;
+    color: white;
+}
 
- h3 {
+/* h2 {
      text-align: center;
- }
+     letter-spacing: 5px;
+ } */
 
- /* The typing effect */
+
+
+
+/* The typing effect
  @keyframes typing {
      from {
          width: 0
@@ -33,12 +98,11 @@
      to {
          width: 100%
      }
- }
+ } */
 
- */
 
- /* The typewriter cursor effect */
- * @keyframes blink-caret {
+/* The typewriter cursor effect */
+/* * @keyframes blink-caret {
 
      from,
      to {
@@ -47,71 +111,71 @@
 
      50% {
          border-color: orange;
-     }
- }
+     } */
+/* } */
 
- audio {
-     /* margin: auto; */
-     width: 100%;
-     margin-top: 1rem;
-     text-align: center;
-     vertical-align: center;
-     justify-content: center;
-     /* margin-left: auto; */
- }
+audio {
+    /* margin: auto; */
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    /* margin-left: auto; */
+}
 
 
- /* ----------- iPhone 4 and 4S ----------- */
+/* ----------- iPhone 4 and 4S ----------- */
 
- /* Portrait and Landscape */
- @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {}
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {}
 
- /* Portrait */
- @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
 
- /* Landscape */
- @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
 
- /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
 
- /* Portrait and Landscape */
- @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
 
- /* Portrait */
- @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
 
- /* Landscape */
- @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
 
- /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
- /* Portrait and Landscape */
- @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
 
- /* Portrait */
- @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
 
- /* Landscape */
- @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
 
- /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
- /* Portrait and Landscape */
- @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
 
- /* Portrait */
- @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
 
- /* Landscape */
- @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
 
- /* ----------- iPhone X ----------- */
+/* ----------- iPhone X ----------- */
 
- /* Portrait and Landscape */
- @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
 
- /* Portrait */
- @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
 
- /* Landscape */
- @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}

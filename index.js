@@ -8,11 +8,13 @@ let sounds = [
     },
 
     {
+        title: "Day 2",
+        // link: "https://blah.net",
+        // linktext: "hello",
         audioclip: "audio/02.mp3",
-        link: "",
-        linktext: ""
     },
     {
+        title: "Day 3",
         audioclip: "audio/03.mp3",
         link: "https://blah.net",
         linktext: "audio#3"
@@ -83,9 +85,9 @@ function addAudio() {
     console.log(sounds[counter].link);
 
 
-    document.body.appendChild(audiotitle);
+    // document.body.appendChild(audiotitle);
     // document.body.appendChild(audiolink);
-    document.body.appendChild(audioclip);
+    // document.body.appendChild(audioclip);
 
 
     counter++;
