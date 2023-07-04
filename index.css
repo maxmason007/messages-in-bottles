@@ -28,7 +28,7 @@ h1 {
          blink-caret .75s step-end infinite; */
 
     margin-top: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
     font-size: 24px;
     color: white;
 }
@@ -39,7 +39,7 @@ h2 {
     overflow: hidden;
     color: white;
     font-size: 13px;
-    border-style: solid;
+    /* border-style: solid; */
     font-weight: lighter;
 
 }
@@ -75,7 +75,7 @@ h3 {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 10%;
     /* border-style: dotted; */
     /* border-color: yellow; */
 }
