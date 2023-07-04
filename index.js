@@ -1,4 +1,4 @@
-document.getElementById("moonimage").onclick = function () {
+document.getElementById("waterimage").onclick = function () {
     var audio = document.getElementById("audio");
     if (audio.paused) audio.play();
     else audio.pause();
@@ -111,3 +111,7 @@ addAudio();
 console.log(currentDate);
 console.log(dateToday);
 console.log(month)*/
+
+
+
+

@@ -27,7 +27,7 @@ h1 {
          typing 3.5s steps(40, end),
          blink-caret .75s step-end infinite; */
 
-    margin-top: 2rem;
+    margin-top: 4rem;
     margin-bottom: 2rem;
     font-size: 24px;
     color: white;
@@ -41,6 +41,7 @@ h2 {
     font-size: 13px;
     /* border-style: solid; */
     font-weight: lighter;
+    margin-bottom: 150px;
 
 }
 
@@ -53,16 +54,50 @@ h3 {
 }
 
 .click {
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     width: 78%;
-    margin: auto;
-
+    margin: 2em auto;
 }
 
+.audiotest {
+    color: white;
+}
 
+audio::-webkit-media-controls-panel {
+    background-color: whitesmoke;
+}
 
-.row {
+audio::-webkit-media-controls-time-remaining-display {
+    color: black;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: black;
+    background-color: white;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: white;
+    border-radius: 50%;
+    opacity: 50%;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: white;
+    opacity: 50%;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#player {
+    width: 75%;
+    /* height: 50%; */
+    /* margin-top: 20px; */
+}
+
+​ .row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -172,7 +207,9 @@ audio {
 
 
 
-*/
+
+
+
 /* ----------- iPhone 4 and 4S ----------- */
 
 /* Portrait and Landscape */
