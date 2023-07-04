@@ -112,8 +112,6 @@ h3 {
 
 
 
-
-
 audio {
     /* margin: auto; */
     width: 100%;
@@ -128,13 +126,13 @@ audio {
 .wave::before,
 .wave::after {
     content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 250vw;
-    height: 250vw;
-    margin-left: -125vw;
-    transform-origin: 50% 50%;
+    position: fixed;
+    top: -1px;
+    /* left: 25%; */
+    width: 100vw;
+    height: 100vw;
+    /* margin-left: 100vw; */
+    /* transform-origin: 5% 10%; */
     background-color: transparent;
     border-radius: 38% 42%;
     box-shadow: inset 0 0 10vw rgba(50, 250, 255, 0.8);
@@ -143,19 +141,19 @@ audio {
 }
 
 .wave::before {
-    width: 105%;
+    width: 50%;
     height: 95%;
-    margin-top: -125vw;
-    transform-origin: 49% 51%;
+    /* margin-top: 100vw; */
+    /* transform-origin: 49% 51%; */
     border-radius: 40% 38%;
     box-shadow: inset 0 0 10vw rgba(192, 192, 192, 0.8);
     animation: spin 13s infinite linear;
 }
 
 .wave::after {
-    width: 102%;
-    height: 98%;
-    margin-top: -125vw;
+    width: 100%;
+    height: 100%;
+    /* margin-top: 100vw; */
     transform-origin: 51% 49%;
     border-radius: 48% 42%;
     box-shadow: inset 0 0 10vw rgba(0, 0, 255, 0.8);
