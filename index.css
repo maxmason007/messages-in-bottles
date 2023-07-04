@@ -112,6 +112,7 @@ h3 {
 
 
 
+
 audio {
     /* margin: auto; */
     width: 100%;
@@ -127,7 +128,7 @@ audio {
 .wave::after {
     content: '';
     position: fixed;
-    top: -1px;
+    top: -45px;
     /* left: 25%; */
     width: 100vw;
     height: 100vw;
@@ -145,7 +146,7 @@ audio {
     height: 95%;
     /* margin-top: 100vw; */
     /* transform-origin: 49% 51%; */
-    border-radius: 40% 38%;
+    border-radius: 30% 38%;
     box-shadow: inset 0 0 10vw rgba(192, 192, 192, 0.8);
     animation: spin 13s infinite linear;
 }
