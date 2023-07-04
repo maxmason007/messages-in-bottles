@@ -38,7 +38,7 @@ h2 {
     text-align: center;
     overflow: hidden;
     color: white;
-    font-size: 13px;
+    font-size: 18px;
     /* border-style: solid; */
     font-weight: lighter;
     margin-bottom: 150px;
@@ -142,6 +142,7 @@ audio::-webkit-media-controls-timeline {
 
 .audiotitle {
     margin-left: 15px;
+    margin-top: 25px;
 }
 
 
@@ -163,10 +164,10 @@ audio {
 .wave::after {
     content: '';
     position: fixed;
-    top: -45px;
+    top: -15px;
     /* left: 25%; */
     width: 100vw;
-    height: 100vw;
+    height: 40%;
     /* margin-left: 100vw; */
     /* transform-origin: 5% 10%; */
     background-color: transparent;
@@ -188,12 +189,12 @@ audio {
 
 .wave::after {
     width: 100%;
-    height: 100%;
+    height: 60%;
     /* margin-top: 100vw; */
     transform-origin: 51% 49%;
-    border-radius: 48% 42%;
+    border-radius: 28% 42%;
     box-shadow: inset 0 0 10vw rgba(0, 0, 255, 0.8);
-    animation: spin 10s infinite linear;
+    animation: spin 30s infinite linear;
 }
 
 @keyframes spin {
