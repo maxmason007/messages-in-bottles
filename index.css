@@ -41,7 +41,7 @@ h2 {
     font-size: 18px;
     /* border-style: solid; */
     font-weight: lighter;
-    margin-bottom: 150px;
+    margin-bottom: 6rem;
 
 }
 
@@ -105,16 +105,14 @@ audio::-webkit-media-controls-timeline {
     color: white;
 }
 
-.photorow {
+/* .photorow {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: 10%;
+    margin-top: 6rem;
     /* border-style: dotted; */
-    /* border-color: yellow; */
-}
-
+/* border-color: yellow; */
 .column {
     display: flex;
     flex-direction: column;
@@ -142,10 +140,8 @@ audio::-webkit-media-controls-timeline {
 
 .audiotitle {
     margin-left: 15px;
-    margin-top: 25px;
+    margin-top: 2rem;
 }
-
-
 
 
 
@@ -204,6 +200,94 @@ audio {
 }
 
 
+@media only screen and (min-device-width: 360px) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 7rem;
+        /* border-style: dotted; */
+        /* border-color: yellow; */
+    }
+
+    .audiotitle {
+        margin-left: 15px;
+        margin-top: 3rem;
+    }
+}
+
+
+
+
+@media only screen and (min-device-width: 375px) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 7rem;
+        /* border-style: dotted; */
+        /* border-color: yellow; */
+    }
+
+    .audiotitle {
+        margin-left: 15px;
+        margin-top: 3rem;
+    }
+
+    .audioplayer {
+        margin-top: 4rem;
+    }
+}
+
+@media only screen and (min-device-width: 390px) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 9rem;
+        /* border-style: dotted; */
+        /* border-color: yellow; */
+    }
+
+    .audiotitle {
+        margin-left: 15px;
+        margin-top: 3rem;
+    }
+
+    .audioplayer {
+        margin-top: 8rem;
+    }
+}
+
+@media only screen and (min-device-width: 414px) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 12rem;
+        /* border-style: dotted; */
+        /* border-color: yellow; */
+    }
+
+    .audiotitle {
+        margin-left: 15px;
+        margin-top: 3rem;
+    }
+
+    .audioplayer {
+        margin-top: 11rem;
+    }
+}
+
+
+
+
+
+
 
 
 
@@ -235,8 +319,26 @@ audio {
 
 /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {}
+/* Portrait and Landscape NORMAL GOOD */
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+/* 
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 6rem;
+        /* border-style: dotted; */
+/* border-color: yellow; */
+}
+
+/* .audiotitle {
+        margin-left: 15px;
+        margin-top: 2rem;
+    } */
+}
+
+*/
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
@@ -257,8 +359,75 @@ audio {
 
 /* ----------- iPhone X ----------- */
 
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}
+/* Portrait and Landscape GOOD ONE! */
+/* @media only screen and (min-device-width: 390px) and (max-device-width: 844px) and (-webkit-min-device-pixel-ratio: 3) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 12rem;
+        /* border-style: dotted; */
+/* border-color: yellow; */
+}
+
+/* .audiotitle {
+        margin-left: 15px;
+        margin-top: 2rem;
+    }
+
+    .audioplayer {
+        margin-top: 5rem;
+    } */
+}
+
+*/
+/* @media only screen and (min-device-width: 393px) and (max-device-width: 851px) and (-webkit-min-device-pixel-ratio: 3) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 22rem;
+        /* border-style: dotted; */
+/* border-color: yellow; */
+/* }
+
+    .audiotitle {
+        margin-left: 15px;
+        margin-top: 20rem;
+    }
+
+    .audioplayer {
+        margin-top: 15rem;
+    } */
+}
+
+*/
+/* @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) {
+
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 12rem;
+        /* border-style: dotted; */
+/* border-color: yellow; */
+}
+
+*/
+/* .audiotitle {
+        margin-left: 15px;
+        margin-top: 2rem;
+    }
+
+    .audioplayer {
+        margin-top: 10rem;
+    } */
+/* } */
+
+
 
 /* Portrait */
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
