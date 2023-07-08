@@ -1,0 +1,457 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local('Open Sans'), local('OpenSans'), url('http://themes.googleusercontent.com/static/fonts/opensans/v5/cJZKeOuBrn4kERxqtaUH3T8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
+}
+
+body {
+    background: black;
+}
+
+h1 {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    font-weight: lighter;
+    text-align: center;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    /* border-right: .15em solid orange; */
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    /* animation:
+         typing 3.5s steps(40, end),
+         blink-caret .75s step-end infinite; */
+
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-size: 24px;
+    color: white;
+}
+
+h2 {
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    font-size: 18px;
+    /* border-style: solid; */
+    font-weight: lighter;
+    margin-bottom: 6rem;
+
+}
+
+h3 {
+    text-align: center;
+    color: yellow;
+    font-size: 14px;
+    margin-bottom: 25px;
+    font-family: Open Sans;
+}
+
+.click {
+    padding: 20px;
+    text-align: center;
+    width: 78%;
+    margin: 2em auto;
+}
+
+.audiotest {
+    color: white;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: whitesmoke;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+    color: black;
+}
+
+audio::-webkit-media-controls-current-time-display {
+    color: black;
+    background-color: white;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: white;
+    border-radius: 50%;
+    opacity: 50%;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: white;
+    opacity: 50%;
+    border-radius: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#player {
+    width: 75%;
+    /* height: 50%; */
+    /* margin-top: 20px; */
+}
+
+​ .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+}
+
+/* .photorow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-top: 6rem;
+    /* border-style: dotted; */
+/* border-color: yellow; */
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    margin-bottom: 10%;
+}
+
+.photocolumn {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    text-align: center;
+    /* border-style: dashed; */
+    /* border-color: yellow; */
+
+}
+
+.green-column {
+    height: 40px;
+    text-align: center;
+    font-family: "Lucida Sans Typewriter", "Lucida Console", monaco, "Bitstream Vera Sans Mono", monospace;
+}
+
+.audiotitle {
+    margin-left: 15px;
+    margin-top: 2rem;
+}
+
+
+
+audio {
+    /* margin: auto; */
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    /* margin-left: auto; */
+}
+
+.wave,
+.wave::before,
+.wave::after {
+    content: '';
+    position: fixed;
+    top: -15px;
+    /* left: 25%; */
+    width: 100vw;
+    height: 40%;
+    /* margin-left: 100vw; */
+    /* transform-origin: 5% 10%; */
+    background-color: transparent;
+    border-radius: 38% 42%;
+    box-shadow: inset 0 0 10vw rgba(50, 250, 255, 0.8);
+    animation: spin 16s infinite linear;
+    mix-blend-mode: multiply;
+}
+
+.wave::before {
+    width: 50%;
+    height: 95%;
+    /* margin-top: 100vw; */
+    /* transform-origin: 49% 51%; */
+    border-radius: 30% 38%;
+    box-shadow: inset 0 0 10vw rgba(192, 192, 192, 0.8);
+    animation: spin 13s infinite linear;
+}
+
+.wave::after {
+    width: 100%;
+    height: 60%;
+    /* margin-top: 100vw; */
+    transform-origin: 51% 49%;
+    border-radius: 28% 42%;
+    box-shadow: inset 0 0 10vw rgba(0, 0, 255, 0.8);
+    animation: spin 30s infinite linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media only screen and (min-device-width: 360px) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 7rem;
+        /* border-style: dotted; */
+        /* border-color: yellow; */
+    }
+
+    .audiotitle {
+        margin-left: 15px;
+        margin-top: 3rem;
+    }
+}
+
+
+
+@media only screen and (min-device-width: 360px) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 7rem;
+        /* border-style: dotted; */
+        /* border-color: yellow; */
+    }
+
+    .audiotitle {
+        margin-left: 15px;
+        margin-top: 3rem;
+    }
+
+    .audioplayer {
+        margin-top: 3rem;
+    }
+}
+
+
+@media only screen and (min-device-width: 375px) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 5rem;
+        /* border-style: dotted; */
+        /* border-color: yellow; */
+    }
+
+    .audiotitle {
+        margin-left: 15px;
+        margin-top: 3rem;
+    }
+
+    .audioplayer {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-device-width: 390px) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 9rem;
+        /* border-style: dotted; */
+        /* border-color: yellow; */
+    }
+
+    .audiotitle {
+        margin-left: 15px;
+        margin-top: 3rem;
+    }
+
+    .audioplayer {
+        margin-top: 8rem;
+    }
+}
+
+@media only screen and (min-device-width: 412px) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 14rem;
+        /* border-style: dotted; */
+        /* border-color: yellow; */
+    }
+
+    .audiotitle {
+        margin-left: 15px;
+        margin-top: 3rem;
+    }
+
+    .audioplayer {
+        margin-top: 12rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------- iPhone 4 and 4S ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) {}
+
+/* Portrait */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+/* Landscape */
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape NORMAL GOOD */
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+/* 
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 6rem;
+        /* border-style: dotted; */
+/* border-color: yellow; */
+}
+
+/* .audiotitle {
+        margin-left: 15px;
+        margin-top: 2rem;
+    } */
+}
+
+*/
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {}
+
+/* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {}
+
+/* Portrait */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+/* Landscape */
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape GOOD ONE! */
+/* @media only screen and (min-device-width: 390px) and (max-device-width: 844px) and (-webkit-min-device-pixel-ratio: 3) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 12rem;
+        /* border-style: dotted; */
+/* border-color: yellow; */
+}
+
+/* .audiotitle {
+        margin-left: 15px;
+        margin-top: 2rem;
+    }
+
+    .audioplayer {
+        margin-top: 5rem;
+    } */
+}
+
+*/
+/* @media only screen and (min-device-width: 393px) and (max-device-width: 851px) and (-webkit-min-device-pixel-ratio: 3) {
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 22rem;
+        /* border-style: dotted; */
+/* border-color: yellow; */
+/* }
+
+    .audiotitle {
+        margin-left: 15px;
+        margin-top: 20rem;
+    }
+
+    .audioplayer {
+        margin-top: 15rem;
+    } */
+}
+
+*/
+/* @media only screen and (min-device-width: 414px) and (max-device-width: 896px) and (-webkit-min-device-pixel-ratio: 3) {
+
+    .photorow {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-top: 12rem;
+        /* border-style: dotted; */
+/* border-color: yellow; */
+}
+
+*/
+/* .audiotitle {
+        margin-left: 15px;
+        margin-top: 2rem;
+    }
+
+    .audioplayer {
+        margin-top: 10rem;
+    } */
+/* } */
+
+
+
+/* Portrait */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {}
+
+/* Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {}
