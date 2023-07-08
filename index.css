@@ -283,13 +283,13 @@ audio {
     }
 }
 
-@media only screen and (min-device-width: 414px) {
+@media only screen and (min-device-width: 412px) {
     .photorow {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        margin-top: 12rem;
+        margin-top: 14rem;
         /* border-style: dotted; */
         /* border-color: yellow; */
     }
@@ -300,7 +300,7 @@ audio {
     }
 
     .audioplayer {
-        margin-top: 11rem;
+        margin-top: 12rem;
     }
 }
 
